@@ -11,7 +11,7 @@ import './index.css'; // Ensure Tailwind CSS styles are applied
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> Add Navbar here */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/enhance" element={<Enhance />} />
