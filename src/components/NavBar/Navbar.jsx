@@ -1,6 +1,7 @@
 // src/components/Navbar.js
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -8,26 +9,21 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
-            {/* Logo Section */}
-            <a href="/" className="text-xl font-bold text-gray-800">
+            <Link to="/" className="text-xl font-bold text-gray-800">
               ISRO EPSR
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex items-center space-x-4">
-            {/* Navigation Links */}
-            <a href="/" className="text-gray-600 hover:text-blue-600">
+            <Link to="/" className="text-gray-600 hover:text-blue-600">
               Home
-            </a>
-            <a href="/about" className="text-gray-600 hover:text-blue-600">
+            </Link>
+            <Link to="/enhance" className="text-gray-600 hover:text-blue-600">
+              Enhance
+            </Link>
+            <Link to="/about" className="text-gray-600 hover:text-blue-600">
               About
-            </a>
-            <a href="/services" className="text-gray-600 hover:text-blue-600">
-              enhance
-            </a>
-            <a href="/contact" className="text-gray-600 hover:text-blue-600">
-              Contact
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
