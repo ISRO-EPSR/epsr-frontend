@@ -17,7 +17,8 @@ const Home = () => {
         )}
         <Spline
           scene="https://prod.spline.design/kMwFxGdOAZOZ1nR5/scene.splinecode"
-          className="w-full h-full"
+          className="w-[100%] h-full"
+          style={{width:"100%"}}
           onLoad={() => setLoading(false)} // Hide placeholder when scene is loaded
         />
       </div>
