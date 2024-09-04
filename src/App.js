@@ -1,7 +1,6 @@
 // src/App.js
 
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/NavBar/Navbar';
 import Home from './components/pages/Home';
 import Enhance from './components/pages/Enhance';
@@ -10,14 +9,12 @@ import './index.css'; // Ensure Tailwind CSS styles are applied
 
 const App = () => {
   return (
-    <Router>
+    <div>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/enhance" element={<Enhance />} />
-        <Route path="/about" element={<About />} />
-      </Routes>
-    </Router>
+      <Home />
+      <Enhance />
+      <About />
+    </div>
   );
 };
 

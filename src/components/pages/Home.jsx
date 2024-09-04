@@ -2,13 +2,12 @@
 
 import React, { useState } from 'react';
 import Spline from '@splinetool/react-spline'; // Import the Spline component
-import { Link } from 'react-router-dom'; // Import Link for navigation
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div id="home-section" className="relative min-h-screen overflow-hidden">
       {/* Spline Object with Placeholder */}
       <div className="absolute inset-0">
         {loading && (
